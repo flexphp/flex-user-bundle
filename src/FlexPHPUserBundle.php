@@ -11,7 +11,7 @@ namespace FlexPHP\Bundle\UserBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class UserBundle extends Bundle
+class FlexPHPUserBundle extends Bundle
 {
     public function getPath(): string
     {

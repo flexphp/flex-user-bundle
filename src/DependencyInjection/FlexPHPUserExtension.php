@@ -14,13 +14,8 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-class UserExtension extends Extension
+class FlexPHPUserExtension extends Extension
 {
-    public function getContainerExtension(): string
-    {
-        return 'flexphp_user';
-    }
-
     public function load(array $configs, ContainerBuilder $container): void
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/../../config'));
