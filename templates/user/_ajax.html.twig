@@ -1,0 +1,22 @@
+{% for _user in users %}
+    <tr>
+        <td>{{ _user.id }}</td>
+        <td>{{ _user.email }}</td>
+        <td>{{ _user.name }}</td>
+        {# <td>{{ _user.password }}</td> #}
+        {# <td>{{ _user.timezone }}</td> #}
+        <td>{{ _user.statusIdInstance.name|default('-') }}</td>
+        <td>{{ _user.lastLoginAt ? _user.lastLoginAt|date('Y-m-d H:i:s') : '-' }}</td>
+        <td class="text-center">
+            <div class="btn-group">
+                <a href="{{ path('flexphp.user.users.read', {id: _user.id}) }}" class="btn btn-sm btn-outline-light" title="{% trans from 'messages' %}action.read{% endtrans %}">
+                    <i class="fa fa-eye text-dark" aria-hidden="true"></i>
+                </a>
+
+                <a href="{{ path('flexphp.user.users.edit', {id: _user.id}) }}" class="btn btn-sm btn-outline-light" title="{% trans from 'messages' %}action.edit{% endtrans %}">
+                    <i class="fa fa-edit text-info" aria-hidden="true"></i>
+                </a>
+            </div>
+        </td>
+    </tr>
+{% endfor %}

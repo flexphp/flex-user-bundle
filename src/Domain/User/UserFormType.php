@@ -52,7 +52,7 @@ final class UserFormType extends AbstractType
                 'label' => 'label.statusId',
                 'required' => false,
                 'attr' => [
-                    'data-autocomplete-url' => $this->router->generate('users.find.user-status'),
+                    'data-autocomplete-url' => $this->router->generate('flexphp.user.users.find.user-status'),
                 ],
                 'choices' => $choices,
                 'data' => $value,
@@ -98,7 +98,7 @@ final class UserFormType extends AbstractType
             'label' => 'label.statusId',
             'required' => false,
             'attr' => [
-                'data-autocomplete-url' => $this->router->generate('users.find.user-status'),
+                'data-autocomplete-url' => $this->router->generate('flexphp.user.users.find.user-status'),
                 'maxlength' => 2,
             ],
         ]);

@@ -9,6 +9,8 @@
         <service id="flexphp.user.bundle" class="FlexPHP\Bundle\UserBundle" />
         <service id="FlexPHP\Bundle\UserBundle" alias="flexphp.user.bundle" />
 
+        <service id="flexphp.user.bundle.user_controller" class="FlexPHP\Bundle\UserBundle\Controller\UserController" public="true" />
+
         <prototype namespace="FlexPHP\Bundle\UserBundle\" resource="../src/*" exclude="../src/{DependencyInjection}">
             <tag name="@router"/>
         </prototype>

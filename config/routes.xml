@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<routes xmlns="http://symfony.com/schema/routing"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="flexphp.user.users.index" controller="flexphp.user.bundle.user_controller::index" path="/users" methods="GET" />
+    <route id="flexphp.user.users.new" controller="flexphp.user.bundle.user_controller::new" path="/users/new" methods="GET" />
+    <route id="flexphp.user.users.create" controller="flexphp.user.bundle.user_controller::create" path="/users/create" methods="POST" />
+    <route id="flexphp.user.users.read" controller="flexphp.user.bundle.user_controller::read" path="/users/{id}" methods="GET" />
+    <route id="flexphp.user.users.edit" controller="flexphp.user.bundle.user_controller::edit" path="/users/edit/{id}" methods="GET" />
+    <route id="flexphp.user.users.update" controller="flexphp.user.bundle.user_controller::update" path="/users/update/{id}" methods="PUT" />
+    <route id="flexphp.user.users.delete" controller="flexphp.user.bundle.user_controller::delete" path="/users/delete/{id}" methods="DELETE" />
+    <route id="flexphp.user.users.find.user-status" controller="flexphp.user.bundle.user_controller::findUserStatus" path="/users/find-user-status" methods="POST" />
+</routes>
+
