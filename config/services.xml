@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <defaults autowire="true" autoconfigure="true"/>
+
+        <service id="flexphp.user.bundle" class="FlexPHP\Bundle\UserBundle" />
+        <service id="FlexPHP\Bundle\UserBundle" alias="flexphp.user.bundle" />
+
+        <prototype namespace="FlexPHP\Bundle\UserBundle\" resource="../src/*" exclude="../src/{DependencyInjection}">
+            <tag name="@router"/>
+        </prototype>
+    </services>
+</container>
+
