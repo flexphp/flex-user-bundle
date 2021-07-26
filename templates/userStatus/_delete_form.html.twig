@@ -1,5 +1,5 @@
 {{ include('@FlexPHPUser/form/_delete_confirmation.html.twig') }}
-<form id="delete-form" name="delete-form" method="post" action="{{ path('flexphp.user.users.delete', {id: user.id}) }}" data-confirmation="true">
+<form id="delete-form" name="delete-form" method="post" action="{{ path('flexphp.user.user-status.delete', {id: userStatus.id}) }}" data-confirmation="true">
     <input type="hidden" name="token" value="{{ csrf_token('delete') }}" />
     <input type="hidden" name="_method" value="delete" />
     <button type="submit" class="btn btn-outline-danger" tabindex="-1">

@@ -11,5 +11,13 @@
     <route id="flexphp.user.users.update" controller="flexphp.user.bundle.user_controller::update" path="/users/update/{id}" methods="PUT" />
     <route id="flexphp.user.users.delete" controller="flexphp.user.bundle.user_controller::delete" path="/users/delete/{id}" methods="DELETE" />
     <route id="flexphp.user.users.find.user-status" controller="flexphp.user.bundle.user_controller::findUserStatus" path="/users/find-user-status" methods="POST" />
+
+    <route id="flexphp.user.user-status.index" controller="flexphp.user.bundle.user_status_controller::index" path="/user-status" methods="GET" />
+    <route id="flexphp.user.user-status.new" controller="flexphp.user.bundle.user_status_controller::new" path="/user-status/new" methods="GET" />
+    <route id="flexphp.user.user-status.create" controller="flexphp.user.bundle.user_status_controller::create" path="/user-status/create" methods="POST" />
+    <route id="flexphp.user.user-status.read" controller="flexphp.user.bundle.user_status_controller::read" path="/user-status/{id}" methods="GET" />
+    <route id="flexphp.user.user-status.edit" controller="flexphp.user.bundle.user_status_controller::edit" path="/user-status/edit/{id}" methods="GET" />
+    <route id="flexphp.user.user-status.update" controller="flexphp.user.bundle.user_status_controller::update" path="/user-status/update/{id}" methods="PUT" />
+    <route id="flexphp.user.user-status.delete" controller="flexphp.user.bundle.user_status_controller::delete" path="/user-status/delete/{id}" methods="DELETE" />
 </routes>
 
