@@ -76,7 +76,7 @@ final class UserController extends AbstractController
 
         $this->addFlash('success', $trans->trans('message.created', [], 'user'));
 
-        return $this->redirectToRoute('users.index');
+        return $this->redirectToRoute('flexphp.user.users.index');
     }
 
     /**
@@ -135,7 +135,7 @@ final class UserController extends AbstractController
 
         $this->addFlash('success', $trans->trans('message.updated', [], 'user'));
 
-        return $this->redirectToRoute('users.index');
+        return $this->redirectToRoute('flexphp.user.users.index');
     }
 
     /**
@@ -149,7 +149,7 @@ final class UserController extends AbstractController
 
         $this->addFlash('success', $trans->trans('message.deleted', [], 'user'));
 
-        return $this->redirectToRoute('users.index');
+        return $this->redirectToRoute('flexphp.user.users.index');
     }
 
     /**
