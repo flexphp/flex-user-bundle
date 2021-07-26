@@ -1,0 +1,47 @@
+Users:
+  Title: Users
+  Icon: ''
+  Attributes:
+    id:
+      Name: Id
+      DataType: integer
+      Constraints: pk|ai|required
+    email:
+      Name: Email
+      DataType: string
+      Constraints: 'required|minlength:6|maxlength:80|type:email'
+    name:
+      Name: Name
+      DataType: string
+      Constraints: 'required|maxlength:80'
+    password:
+      Name: Password
+      DataType: string
+      Constraints: 'required|type:password'
+    timezone:
+      Name: Timezone
+      DataType: string
+      Constraints: 'required|type:timezone'
+    statusId:
+      Name: StatusId
+      DataType: string
+      Constraints: 'fk:UserStatus,Name|maxlength:2'
+    lastLoginAt:
+      Name: LastLoginAt
+      DataType: datetime
+    createdAt:
+      Name: CreatedAt
+      DataType: datetime
+      Constraints: ca
+    updatedAt:
+      Name: UpdatedAt
+      DataType: datetime
+      Constraints: ua
+    createdBy:
+      Name: CreatedBy
+      DataType: integer
+      Constraints: 'cb|fk:Users,Name'
+    updatedBy:
+      Name: UpdatedBy
+      DataType: integer
+      Constraints: 'ub|fk:Users,Name'
