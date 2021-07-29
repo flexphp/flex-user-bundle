@@ -12,6 +12,8 @@ final class UserRbac
             case 'admin@admin':
             case 'demo@demo':
             case 'sand@box':
+            case 'admin@aceitar':
+            case 'admin@contratar':
                 $roles = [
                     'ROLE_ADMIN',
                 ];
