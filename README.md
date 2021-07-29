@@ -49,7 +49,7 @@ in the `config/bundles.php` file of your project:
 
 return [
     // ...
-    FlexPHP\Bundle\UserBundle::class => ['all' => true],
+    FlexPHP\Bundle\FlexPHPUserBundle::class => ['all' => true],
 ];
 ```
 
