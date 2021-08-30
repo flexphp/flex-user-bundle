@@ -9,9 +9,11 @@ final class UserRbac
         $roles = [];
 
         switch($user) {
+            case 'system@system':
             case 'admin@admin':
             case 'demo@demo':
             case 'sand@box':
+            case 'admin@anotar':
             case 'admin@aceitar':
             case 'admin@contratar':
                 $roles = [
