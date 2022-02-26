@@ -47,6 +47,8 @@ final class UserRbac
                     'ROLE_USER_PAYMENTMETHOD_INDEX',
                     'ROLE_USER_PAYMENT_READ',
                     'ROLE_USER_BILL_READ',
+
+                    'ROLE_USER_PAYSHEET_READ',
                 ];
 
                 break;
