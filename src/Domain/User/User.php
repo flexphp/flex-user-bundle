@@ -11,9 +11,10 @@ namespace FlexPHP\Bundle\UserBundle\Domain\User;
 
 use FlexPHP\Bundle\HelperBundle\Domain\Helper\ToArrayTrait;
 use FlexPHP\Bundle\UserBundle\Domain\UserStatus\UserStatus;
+use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
-final class User implements UserInterface
+final class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
     use ToArrayTrait;
 
@@ -190,12 +191,17 @@ final class User implements UserInterface
         return $this->name();
     }
 
-    public function getPassword()
+    public function getUserIdentifier(): ?string
+    {
+        return $this->name();
+    }
+
+    public function getPassword(): ?string
     {
         return $this->password();
     }
 
-    public function getSalt()
+    public function getSalt(): ?string
     {
         return null;
     }
